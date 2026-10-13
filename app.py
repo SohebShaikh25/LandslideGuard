@@ -108,5 +108,5 @@ def export_csv():
     return Response(s.getvalue(),mimetype="text/csv",headers={"Content-Disposition":"attachment; filename=monitoring_locations.csv"})
 @app.route("/health")
 def health(): return jsonify({"status":"ok","app":"LandslideGuard NE"})
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=False)
+ if __name__ == "__main__":
+    app.run(host="127.0.0.1", port=5000, debug=True)
