@@ -1,4 +1,5 @@
 from flask import Flask, render_template, jsonify, request, Response
+app = Flask(__name__)
 import sqlite3, os, csv, io, json, urllib.request, urllib.parse
 from datetime import datetime, timezone
 
